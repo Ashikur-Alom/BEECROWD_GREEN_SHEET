@@ -1,13 +1,14 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main() {
-    int a,b,PROD;
+    int a,b,prod;
+    scanf("%d %d", &a, &b);
     
-    scanf("%d", &a);
-    scanf("%d", &b);
+    prod = a * b;
     
-    PROD = a * b;
-    printf("PROD = %d\n", PROD);
+    if(prod >= 0 || prod <= 0) {
+        printf("PROD = %d\n", prod);
+    }
     
     return 0;
 }
