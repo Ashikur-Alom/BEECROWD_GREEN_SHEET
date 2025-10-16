@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    int a,b,X;
+    int a,b,sum;
+    scanf("%d %d", &a, &b);
     
-
-    scanf("%d", &a);
- 
-    scanf("%d", &b);
+    sum = a + b;
     
-    X = a + b;
-    printf("X = %d\n", X);
+    if(sum <= 0 || sum >= 0 || sum == 0) {
+        printf("X = %d\n", sum);
+    }
     
     return 0;
 }
